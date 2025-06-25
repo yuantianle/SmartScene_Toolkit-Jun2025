@@ -1,6 +1,6 @@
 # SmartScene Toolkit (Blender Add-ons)
 
-A collection of practical Blender add-ons designed to enhance hierarchy manipulation, mirroring, and object organization.  
+Efficient Blender toolkits collection add-on to enhance hierarchy manipulation, mirroring, and scene organization.
 
 ## 🧩 Included Add-ons
 
