@@ -16,17 +16,23 @@ Efficient Blender toolkits collection add-on to enhance hierarchy manipulation, 
 
 ## 🎥 Demonstration
 
-#### Mirror to Cursor
-![alt text](parent_to_cursor.gif)
+#### ● Mirror to Cursor
+![alt text](assets/parent_to_cursor.gif)
 
-#### Duplicate Hierarchy
-![alt text](duplicate_hierarchies.gif)
+#### ● Duplicate Hierarchy
+![alt text](assets/duplicate_hierarchies.gif)
 
-#### Move Hierarchy to New Collection
-![alt text](move_hierarchies_new_collection.gif)
+#### ● Move Hierarchy to New Collection
+![alt text](assets/move_hierarchies_new_collection.gif)
 
-#### Mirror to Cursor
-![alt text](mirror_cursor.gif)
+#### ● Mirror to Cursor
+![alt text](assets/mirror_cursor.gif)
+
+#### ● Mirror to Cursor Edit
+![alt text](assets/mirror_cursor_edit.gif)
+
+#### ... More are on the way!
+
 ---
 
 ## 🔧 Installation
@@ -36,10 +42,7 @@ Open source version:
 2. Open Blender → *Edit > Preferences > Add-ons > Install*
 3. Select the `.py` file, then enable it in the list.
 
-Premium version:
-1. Download the `.zip` file.
-2. Open Blender → *Edit > Preferences > Add-ons > Install*
-3. Select the `.zip` file, then enable it in the list.
+Premium version (coming soon):
 
 ---
 
@@ -56,7 +59,7 @@ Examples:
 
 ## 💡 Pro / Premium Version (Coming soon)
 
-![alt text](image.png)
+![alt text](assets/image.png)
 
 A premium version with:
 - Advanced features (custom axes, batch automation, undo layers)
