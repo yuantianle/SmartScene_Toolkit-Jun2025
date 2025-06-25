@@ -19,6 +19,8 @@ A collection of practical Blender add-ons designed to enhance hierarchy manipula
 #### Mirror to Cursor
 ![alt text](parent_to_cursor.gif)
 
+#### Duplicate Hierarchy
+![alt text](duplicate_hierarchies.gif)
 ---
 
 ## 🔧 Installation
