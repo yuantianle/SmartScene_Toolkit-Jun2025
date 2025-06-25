@@ -6,8 +6,8 @@ Efficient Blender toolkits collection add-on to enhance hierarchy manipulation, 
 
 | Name | Description |
 |------|-------------|
-| **Parent to Cursor (ECP)** | Create an Empty at the cursor and parent all selected hierarchies to it. |
-| **Hierarchy Duplicate (Multi-parent)** | Duplicate complex hierarchies with multiple parents, preserving structure. |
+| **Parent to Cursor** | Create an Empty at the cursor and parent all selected hierarchies to it. |
+| **Hierarchy Duplicate** | Duplicate complex hierarchies with multiple parents, preserving structure. |
 | **Move Hierarchy to New Collection** | Move selected objects and all children into a new or named collection. |
 | **Mirror to Cursor** | Mirror-duplicate selected objects/hierarchy across a plane at the 3D cursor. |
 | **Mirror to Cursor Edit** | In edit mode, mirror-duplicate selected geometry across a plane at the 3D cursor.|
