@@ -21,6 +21,12 @@ Efficient Blender toolkits collection add-on to enhance hierarchy manipulation, 
 
 #### Duplicate Hierarchy
 ![alt text](duplicate_hierarchies.gif)
+
+#### Move Hierarchy to New Collection
+![alt text](move_hierarchies_new_collection.gif)
+
+#### Mirror to Cursor
+![alt text](mirror_cursor.gif)
 ---
 
 ## 🔧 Installation
