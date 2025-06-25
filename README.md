@@ -60,11 +60,13 @@ Examples:
 ## 💡 Pro / Premium Version (Coming soon)
 
 ![alt text](assets/image.png)
+![alt text](assets/image2.png)
 
-A premium version with:
-- Advanced features (custom axes, batch automation, undo layers)
+A **premium version** with:
+- All in one add-on with all features
+- Top and right-click menu integration, some support shortcuts
 - Optimized performance for large scenes
-- UX polish and configuration options
+- UX polish
 - Future update support
 
 ---
