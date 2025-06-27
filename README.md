@@ -73,7 +73,6 @@ A **premium version** with:
 
 ## 📜 License
 
-CC BY-NC 4.0 License (for the free version).  
-Please credit **Tianle Yuan** if you use or modify.
+GPL-3.0-or-later License (for the free version).
 
 
