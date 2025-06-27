@@ -37,7 +37,7 @@
 
 ## 3. 🔧Installation
 
-Open source version:
+Community version:
 1. Download the `.py` file(s) you want.
 2. Open Blender → *Edit > Preferences > Add-ons > Install*
 3. Select the `.py` file, then enable it in the list.
@@ -57,7 +57,7 @@ Examples:
 - **Move Hierarchy to New Collection**: Right-click → *Move Hierarchy to New Collection*
 
 
-## 5. 💡Pro / Premium Version (Coming soon)
+## 5. 💡Pro / Premium Version
 
 Click [here](https://superhivemarket.com/products/smartscene-toolkit) to fly to **Superhive Market**.
 
