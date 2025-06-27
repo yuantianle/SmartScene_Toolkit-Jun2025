@@ -42,7 +42,10 @@ Open source version:
 2. Open Blender → *Edit > Preferences > Add-ons > Install*
 3. Select the `.py` file, then enable it in the list.
 
-Premium version (coming soon):
+Premium version:
+1. Download the `.zip` file(s) you want.
+2. Open Blender → *Edit > Preferences > Add-ons > Install*
+3. Select the `.zip` file, then enable it in the list.
 
 ## 4. 📋Usage
 
@@ -55,6 +58,8 @@ Examples:
 
 
 ## 5. 💡Pro / Premium Version (Coming soon)
+
+Click [here](https://superhivemarket.com/products/smartscene-toolkit) to fly to **Superhive Market**.
 
 ![alt text](assets/image.png)
 ![alt text](assets/image2.png)
