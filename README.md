@@ -32,7 +32,7 @@
 #### ● 2.5 Mirror to Cursor Edit
 ![alt text](assets/mirror_cursor_edit.gif)
 
-#### ... More are on the way!
+**... More are on the way!**
 
 
 ## 3. 🔧Installation
