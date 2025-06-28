@@ -1,7 +1,7 @@
 schema_version = "1.0.0"
 
 id = "SmartScene_Toolkit"
-version = "1.0.0"
+version = "1.1.0"
 name = "SmartScene Toolkit"
 tagline = "Tool kits for easier parent, duplication, mirror, collection"
 maintainer = "Tianle Yuan"

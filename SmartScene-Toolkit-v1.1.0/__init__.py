@@ -19,7 +19,7 @@
 # ***** END GPL LICENSE BLOCK ****
 
 bl_info = {
-    "name": "SmartScene Toolkit",
+    "name": "🧩 SmartScene Toolkit",
     "author": "Tianle Yuan",
     "version": (1, 0, 0),
     "blender": (4, 4, 3),
@@ -49,7 +49,6 @@ modules = [
 
 def register():
     for mod in modules:
-        importlib.reload(mod)
         if hasattr(mod, "register"):
             mod.register()
 

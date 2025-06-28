@@ -68,20 +68,38 @@ class OBJECT_OT_DuplicateHierarchyMulti(bpy.types.Operator):
                 anc = anc.parent
             if anc not in root_parents:
                 root_parents.append(anc)
+        
+        target_collection = context.active_object.users_collection[0] if context.active_object else context.scene.collection
 
-        bpy.ops.object.select_all(action='DESELECT')
+        def duplicate_hierarchy(obj, collection):
+            obj_copy = obj.copy()
+            if obj.data:
+                obj_copy.data = obj.data.copy()
+            collection.objects.link(obj_copy)
+            obj_copy.matrix_world = obj.matrix_world.copy()
+            obj_copy.select_set(True)
+
+            for child in obj.children:
+                child_copy = duplicate_hierarchy(child, collection)
+                child_copy.parent = obj_copy
+                child_copy.matrix_parent_inverse = child.matrix_parent_inverse.copy()
+
+            return obj_copy
+        
+        for obj in context.selected_objects:
+            obj.select_set(False)
+
+        new_roots = []
         for root in root_parents:
-            root.select_set(True)
-            self.tag_and_unhide_children(root)
+            new_root = duplicate_hierarchy(root, target_collection)
+            new_roots.append(new_root)
 
-        bpy.ops.object.duplicate()
+    
+        self.report({'INFO'}, f"Duplicated {len(new_roots)} root hierarchies")
 
-        new_roots = [obj for obj in context.selected_objects if obj.parent is None]
 
-        for root in (root_parents + new_roots):
-            self.restore_hidden_state(root)
-
-        bpy.ops.transform.translate('INVOKE_DEFAULT')
+        if new_roots:
+            bpy.ops.transform.translate('INVOKE_DEFAULT') 
 
         return {'FINISHED'}
 
@@ -95,7 +113,7 @@ addon_keymaps = []
 
 def register():
     bpy.utils.register_class(OBJECT_OT_DuplicateHierarchyMulti)
-    bpy.types.VIEW3D_MT_object.append(menu_entry)
+    bpy.types.VIEW3D_MT_object_context_menu.append(menu_entry)
 
     wm = bpy.context.window_manager
     kc = wm.keyconfigs.addon
@@ -113,7 +131,7 @@ def unregister():
         km.keymap_items.remove(kmi)
     addon_keymaps.clear()
 
-    bpy.types.VIEW3D_MT_object.remove(menu_entry)
+    bpy.types.VIEW3D_MT_object_context_menu.append(menu_entry)
     bpy.utils.unregister_class(OBJECT_OT_DuplicateHierarchyMulti)
 
 

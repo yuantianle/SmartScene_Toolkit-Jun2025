@@ -72,6 +72,21 @@ class OBJECT_OT_mirror_dup_cursor(bpy.types.Operator):
         default='X'
     )
 
+    def duplicate_hierarchy(self, obj, collection):
+        obj_copy = obj.copy()
+        if obj.data:
+            obj_copy.data = obj.data.copy()
+        collection.objects.link(obj_copy)
+        obj_copy.matrix_world = obj.matrix_world.copy()
+
+        for child in obj.children:
+            child_copy = self.duplicate_hierarchy(child, collection)
+            child_copy.parent = obj_copy
+            child_copy.matrix_parent_inverse = child.matrix_parent_inverse.copy()
+
+        return obj_copy
+    
+
     def execute(self, context):
         sel = context.selected_objects
         if not sel:
@@ -81,14 +96,14 @@ class OBJECT_OT_mirror_dup_cursor(bpy.types.Operator):
         roots = find_roots(sel)
         all_targets = collect_recursive(roots)
 
-        bpy.ops.object.select_all(action='DESELECT')
-        for o in all_targets:
-            o.select_set(True)
-        bpy.ops.object.duplicate()
-        dups = context.selected_objects.copy()
 
+        target_collection = context.active_object.users_collection[0] if context.active_object else context.scene.collection
 
-        root_dups = [o for o in dups if o.parent not in dups]
+        root_dups = []
+        for root in roots:
+            dup_root = self.duplicate_hierarchy(root, target_collection)
+            root_dups.append(dup_root)
+
 
         cursor = context.scene.cursor.location.copy()
         M_mirror = make_mirror_matrix(cursor, self.axis)

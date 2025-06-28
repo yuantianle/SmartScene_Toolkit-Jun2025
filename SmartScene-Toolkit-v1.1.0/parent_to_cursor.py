@@ -63,7 +63,8 @@ class OBJECT_OT_create_ecp(bpy.types.Operator):
 
 
         cursor_loc = context.scene.cursor.location.copy()
-        bpy.ops.object.select_all(action='DESELECT')
+
+
         bpy.ops.object.empty_add(type='PLAIN_AXES', location=cursor_loc)
         ecp = context.active_object
         ecp.name = "ECP"
