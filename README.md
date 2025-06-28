@@ -1,8 +1,10 @@
-# SmartScene Toolkit (Blender Add-ons)
+# SmartScene Toolkit (Community Edition)
 
-Efficient Blender toolkits collection add-on to enhance hierarchy manipulation, mirroring, and scene organization.
+> Efficient Blender add-on toolkits to enhance hierarchy manipulation, mirroring, and scene organization.
+> 
+> ![title](https://github.com/user-attachments/assets/559d43fe-de29-4781-88d0-10394bb7fda8)
 
-## 🧩 Included Add-ons
+## 1. 🧩Included Add-ons
 
 | Name | Description |
 |------|-------------|
@@ -12,41 +14,40 @@ Efficient Blender toolkits collection add-on to enhance hierarchy manipulation, 
 | **Mirror to Cursor** | Mirror-duplicate selected objects/hierarchy across a plane at the 3D cursor. |
 | **Mirror to Cursor Edit** | In edit mode, mirror-duplicate selected geometry across a plane at the 3D cursor.|
 
----
 
-## 🎥 Demonstration
+## 2. 🎥Demonstration
 
-#### ● Mirror to Cursor
+#### ● 2.1 Mirror to Cursor
 ![alt text](assets/parent_to_cursor.gif)
 
-#### ● Duplicate Hierarchy
+#### ● 2.2 Duplicate Hierarchy
 ![alt text](assets/duplicate_hierarchies.gif)
 
-#### ● Move Hierarchy to New Collection
+#### ● 2.3 Move Hierarchy to New Collection
 ![alt text](assets/move_hierarchies_new_collection.gif)
 
-#### ● Mirror to Cursor
+#### ● 2.4 Mirror to Cursor
 ![alt text](assets/mirror_cursor.gif)
 
-#### ● Mirror to Cursor Edit
+#### ● 2.5 Mirror to Cursor Edit
 ![alt text](assets/mirror_cursor_edit.gif)
 
-#### ... More are on the way!
+**... More are on the way!**
 
----
 
-## 🔧 Installation
+## 3. 🔧Installation
 
-Open source version:
+Community version:
 1. Download the `.py` file(s) you want.
 2. Open Blender → *Edit > Preferences > Add-ons > Install*
 3. Select the `.py` file, then enable it in the list.
 
-Premium version (coming soon):
+Premium version:
+1. Download the `.zip` file(s) you want.
+2. Open Blender → *Edit > Preferences > Add-ons > Install*
+3. Select the `.zip` file, then enable it in the list.
 
----
-
-## 📋 Usage
+## 4. 📋Usage
 
 Each add-on adds its feature to the **right-click menu** (object context menu) in **Object Mode** or **Edit Mode**.
 
@@ -55,9 +56,10 @@ Examples:
 - **Mirror to Cursor Edit**: Tab to edit mode → Right-click → *Mirror Duplicate to Cursor Plane (Edit Mode)*
 - **Move Hierarchy to New Collection**: Right-click → *Move Hierarchy to New Collection*
 
----
 
-## 💡 Pro / Premium Version (Coming soon)
+## 5. 💡Pro / Premium Version
+
+Click [here](https://superhivemarket.com/products/smartscene-toolkit) to fly to **Superhive Market**.
 
 ![alt text](assets/image.png)
 ![alt text](assets/image2.png)
@@ -69,10 +71,9 @@ A **premium version** with:
 - UX polish
 - Future update support
 
----
 
-## 📜 License
+## 6. 📜License
 
-GPL-3.0-or-later License (for the free version).
+GPL-3.0-or-later License (for the community edition).
 
 
