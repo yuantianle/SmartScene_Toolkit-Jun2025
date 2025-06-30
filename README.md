@@ -4,7 +4,7 @@
 > 
 > ![title](https://github.com/user-attachments/assets/559d43fe-de29-4781-88d0-10394bb7fda8)
 
-## 1. 🧩Included Add-ons
+## 1. 🗃️Table of Functions
 
 | Name | Description |
 |------|-------------|
