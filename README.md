@@ -77,7 +77,10 @@ Take a peek at what the menu system looks like in the **Premium Edition** below:
 - Right-click menu organizations: ![alt text1](https://raw.githubusercontent.com/yuantianle/SmartScene_Toolkit-Jun2025/refs/heads/main/assets/image.png)
 - Top-bar menu organizations: ![alt text2](https://raw.githubusercontent.com/yuantianle/SmartScene_Toolkit-Jun2025/refs/heads/main/assets/image2.png)
 
-👉 [Click here to get the **Premium Edition** on Gumroad](https://marcus997.gumroad.com/l/smartscene_toolkits?_gl=1*1bhrkc4*_ga*MjYwNTAwNTM3LjE3NTA2Mzg5Nzk.*_ga_6LJN6D94N6*czE3NTEyNTA5OTckbzEwJGcxJHQxNzUxMjUxMDE0JGo0MyRsMCRoMA..) and unlock the full power of SmartScene Toolkits!
+👇🏻 Check out the options below and unlock the FULL POWER of **SmartScene Toolkits**!
+- on [Superhive Market](https://superhivemarket.com/products/smartscene-toolkit)
+- on [Gumroad](https://marcus997.gumroad.com/l/smartscene_toolkits?_gl=1*1bhrkc4*_ga*MjYwNTAwNTM3LjE3NTA2Mzg5Nzk.*_ga_6LJN6D94N6*czE3NTEyNTA5OTckbzEwJGcxJHQxNzUxMjUxMDE0JGo0MyRsMCRoMA..)
+
 
 ## 6. 📜License
 
