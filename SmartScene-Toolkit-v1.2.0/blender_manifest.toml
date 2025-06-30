@@ -1,7 +1,7 @@
 schema_version = "1.0.0"
 
 id = "SmartScene_Toolkit"
-version = "1.1.0"
+version = "1.2.0"
 name = "SmartScene Toolkit"
 tagline = "Tool kits for easier parent, duplication, mirror, collection"
 maintainer = "Tianle Yuan"
@@ -10,7 +10,7 @@ type = "add-on"
 
 website = "https://github.com/yuantianle/SmartScene_Toolkit-Jun2025"
 
-tags = ["3D View", "Add Mesh", "Game Engine", "Modeling", "Mesh", "Object", "Scene"]
+tags = ["Object", "Scene"]
 
 blender_version_min = "4.4.3"
 
