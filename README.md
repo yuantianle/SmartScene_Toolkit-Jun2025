@@ -17,7 +17,7 @@
 
 ## 2. 🎥Demonstration
 
-#### ● 2.1 Mirror to Cursor
+#### ● 2.1 Parent to Cursor
 ![alt text](assets/parent_to_cursor.gif)
 
 #### ● 2.2 Duplicate Hierarchy
