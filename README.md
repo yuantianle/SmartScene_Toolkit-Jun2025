@@ -43,6 +43,7 @@ For **Community** or **Premium** (see in `Section 5`) Editions:
 3. Select the `.zip` file, then enable it in the list.
 
 > **Community Edition**  only:
+>
 > We provide you flexibility to import individual functionality; however, you might need to organize your menu/UX design personally: 
 > 1. Download the `.py` file(s) you want.
 > 2. Open Blender → *Edit > Preferences > Add-ons > Install*
@@ -59,7 +60,7 @@ Examples:
 - **Move Hierarchy to New Collection**: Right-click → *Move Hierarchy to New Collection*
 
 
-## 5. 💡Pro / Premium Version
+## 5. 💡Pro / Premium Edition
 
 In the **Community Edition**, each function is provided as an individual `.py` file. This gives you the flexibility to import only the tools you need, without extra overhead — perfect for users who prefer a modular workflow.
 
