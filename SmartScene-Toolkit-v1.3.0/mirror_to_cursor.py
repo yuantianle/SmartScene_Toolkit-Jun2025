@@ -22,11 +22,11 @@ import bpy
 from mathutils import Matrix
 
 bl_info = {
-    "name": "Mirror-Duplicate to Cursor (Plane Style)",
+    "name": "🪄 SmartScene Toolkit - Mirror-Duplicate to Cursor (Plane Style)",
     "author": "Tianle Yuan",
     "version": (1, 0, 0),
     "blender": (4, 4, 3),
-    "location": "🧩 SmartScene Toolkit",
+    "location": "Object Mode > Mirror Duplicate to Cursor",
     "category": "Object",
     "description": "Mirror-duplicate selected hierarchies across the 3D-cursor XY/YZ/ZX plane"
 }
@@ -58,6 +58,7 @@ def make_mirror_matrix(cursor_vec, axis):
 
 
 class OBJECT_OT_mirror_dup_cursor(bpy.types.Operator):
+    """Mirror-duplicate selected hierarchies/objects across the 3D-cursor XY/YZ/ZX plane"""
     bl_idname = "object.mirror_duplicate_cursor"
     bl_label = "Mirror-Duplicate to Cursor"
     bl_options = {'REGISTER', 'UNDO'}
@@ -118,6 +119,7 @@ def menu_func(self, context):
         self.layout.menu("OBJECT_MT_mirror_dup_submenu", icon='MOD_MIRROR')
 
 class OBJECT_MT_mirror_dup_submenu(bpy.types.Menu):
+    """Mirror Duplicate to Cursor Submenu"""
     bl_label = "Mirror Duplicate to Cursor Plane"
 
     def draw(self, context):
@@ -137,12 +139,25 @@ classes = (
     OBJECT_MT_mirror_dup_submenu,
 )
 
+addon_keymaps = []
+
 def register():
     for cls in classes:
         bpy.utils.register_class(cls)
     bpy.types.VIEW3D_MT_object_context_menu.append(menu_func)
 
+    wm = bpy.context.window_manager
+    kc = wm.keyconfigs.addon
+    if kc:
+        km = kc.keymaps.new(name='Object Mode', space_type='EMPTY')
+        kmi = km.keymap_items.new("object.mirror_duplicate_cursor", type='M', value='PRESS', ctrl=True, shift=True)
+        addon_keymaps.append((km, kmi))
+
 def unregister():
+    for km, kmi in addon_keymaps:
+        km.keymap_items.remove(kmi)
+    addon_keymaps.clear()
+    
     bpy.types.VIEW3D_MT_object_context_menu.remove(menu_func)
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)

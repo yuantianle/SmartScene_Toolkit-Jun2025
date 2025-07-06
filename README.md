@@ -1,6 +1,6 @@
 # SmartScene Toolkit (Community Edition)
 
-> Efficient Blender add-on toolkits to enhance hierarchy manipulation, mirroring, and scene organization.
+> Efficient Blender add-on toolkits to enhance hierarchy manipulation and scene organization.
 > 
 > ![title](https://github.com/user-attachments/assets/559d43fe-de29-4781-88d0-10394bb7fda8)
 
@@ -8,29 +8,40 @@
 
 | Name | Description |
 |------|-------------|
-| **🏠 Parent to Cursor** | Create an empty coordinate at the cursor and parent the selected hierarchy. |
-| **🧬 Hierarchy Duplicate** | Duplicate complex hierarchies with preserved ourliner's structure. |
-| **📦 Move Hierarchy to New Collection** | Move selected hierarchies into a new collection. |
-| **🪞 Mirror to Cursor** | Mirror-duplicate selected hierarchies across a plane at the 3D cursor. |
-| **🪞 Mirror to Cursor Edit** | In edit mode, mirror-duplicate selected geometry (vertices/ lines/ faces) across a plane at the 3D cursor.|
+||`———————————————————1.1 Smarter - Parenting Operations———————————————————`|
+| `🏠 Parent to Cursor` | Create an empty coordinate at the cursor and parent the selected hierarchy. |
+| `👆🏻 Powerful Select` | Directly select object or object parent in scene with auto Outliner highlight. |
+||`———————————————————1.2 Smarter - Hierarchy Operations———————————————————`|
+| `🧬 Hierarchy Duplicate` | Duplicate complex hierarchies with preserved ourliner's structure. |
+| `📦 Collect Hierarchy` | Move selected hierarchies into a new collection. |
+||`———————————————————1.3 Smarter - Mirroring Operations———————————————————`|
+| `🪞 Mirror to Cursor` | Mirror-duplicate selected hierarchies across a plane at the 3D cursor. |
+| `🪞 Mirror to Cursor Edit` | In edit mode, mirror-duplicate selected geometry (vertices/ lines/ faces) across a plane at the 3D cursor.|
 
 
 ## 2. 🎥Demonstration
 
-#### ● 2.1 🏠 Parent to Cursor
-![alt text](assets/parent_to_cursor.gif)
 
-#### ● 2.2 🧬 Duplicate Hierarchy
-![alt text](assets/duplicate_hierarchies.gif)
+### 2.1 Smarter - Parenting Operations
+#### 🏠 Parent to Cursor
+![alt text](https://raw.githubusercontent.com/yuantianle/SmartScene_Toolkit-Jun2025/refs/heads/main/assets/parent_to_cursor.gif)
 
-#### ● 2.3 📦 Move Hierarchy to New Collection
-![alt text](assets/move_hierarchies_new_collection.gif)
+#### 👆🏻 Powerful Select
+![alt text](https://raw.githubusercontent.com/yuantianle/SmartScene_Toolkit-Jun2025/refs/heads/main/assets/powerful_select.gif)
 
-#### ● 2.4 🪞 Mirror to Cursor
-![alt text](assets/mirror_cursor.gif)
+### 2.2 Smarter - Hierarchy Operations
+#### 🧬 Duplicate Hierarchy
+![alt text](https://raw.githubusercontent.com/yuantianle/SmartScene_Toolkit-Jun2025/refs/heads/main/assets/duplicate_hierarchies.gif)
 
-#### ● 2.5 🪞 Mirror to Cursor Edit
-![alt text](assets/mirror_cursor_edit.gif)
+#### 📦 Move Hierarchy to New Collection
+![alt text](https://raw.githubusercontent.com/yuantianle/SmartScene_Toolkit-Jun2025/refs/heads/main/assets/move_hierarchies_new_collection.gif)
+
+### 2.3 Smarter - Mirroring Operations
+#### 🪞 Mirror to Cursor
+![alt text](https://raw.githubusercontent.com/yuantianle/SmartScene_Toolkit-Jun2025/refs/heads/main/assets/mirror_cursor.gif)
+
+#### 🪞 Mirror to Cursor Edit
+![alt text](https://raw.githubusercontent.com/yuantianle/SmartScene_Toolkit-Jun2025/refs/heads/main/assets/mirror_cursor_edit.gif)
 
 **... More are on the way!**
 
@@ -53,11 +64,22 @@ For **Community** or **Premium** (see in `Section 5`) Editions:
 
 Each add-on adds its feature to the **right-click menu** (object context menu) in **Object Mode** or **Edit Mode**.
 
-Examples:
-- **Hierarchy Duplicate**: Select Parent/Child/Geometry → Ctrl+Shift+D → normal post-operation like duplicate
+For example: 
 - **Mirror to Cursor**: Right-click → *Mirror Duplicate to Cursor Plane*
 - **Mirror to Cursor Edit**: Tab to edit mode → Right-click → *Mirror Duplicate to Cursor Plane (Edit Mode)*
 - **Move Hierarchy to New Collection**: Right-click → *Move Hierarchy to New Collection*
+
+You can also use **keyboard shortcuts** for functions to speed up your workflow:
+
+| Function | Default Shortcut |
+|----------|----------|
+| **🏠 Parent to Cursor** | Ctrl + Shift + P|
+| **👆🏻 Powerful Select** - Select Parent | Alt + ，|
+| **👆🏻 Powerful Select** - Select Object | Alt + . |
+| **🧬 Hierarchy Duplicate** | Ctrl + Shift + D |
+| **📦 Move Hierarchy to New Collection** | Ctrl + Shift + C |
+| **🪞 Mirror to Cursor** - Default y-z plane | Ctrl + Shift + M |
+| **🪞 Mirror to Cursor Edit** | Ctrl + Shift + M |
 
 
 ## 5. 💡Pro / Premium Edition

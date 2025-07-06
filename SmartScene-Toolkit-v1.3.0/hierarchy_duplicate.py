@@ -21,11 +21,11 @@
 import bpy
 
 bl_info = {
-    "name": "SmartScene Toolkit - Hierarchy Duplicate (multi-parent)",
+    "name": "🪄 SmartScene Toolkit - Hierarchy Duplicate (multi-parent)",
     "author": "Tianle Yuan",
     "version": (1, 0, 0),
     "blender": (4, 4, 3),
-    "location": "🧩 SmartScene Toolkit",
+    "location": "Object Mode > Duplicate Hierarchies",
     "category": "Object",
     "description": "Duplicate selected parent hierarchies with their descendants (works with multiple parents)"
 }
@@ -33,7 +33,7 @@ bl_info = {
 class OBJECT_OT_DuplicateHierarchyMulti(bpy.types.Operator):
     """Duplicate selected parent hierarchies (works with multiple parents)"""
     bl_idname = "object.hierarchy_dup_multi"
-    bl_label = "Duplicate Hierarchy (Multi)"
+    bl_label = "Duplicate Hierarchies"
     bl_options = {'REGISTER', 'UNDO'}
 
     def tag_and_unhide_children(self, parent):
@@ -115,10 +115,11 @@ def register():
     bpy.utils.register_class(OBJECT_OT_DuplicateHierarchyMulti)
     bpy.types.VIEW3D_MT_object_context_menu.append(menu_entry)
 
+    # Hotkey Registration: Ctrl + Shift + D
     wm = bpy.context.window_manager
     kc = wm.keyconfigs.addon
     if kc:
-        km = kc.keymaps.new(name='3D View', space_type='VIEW_3D')
+        km = kc.keymaps.new(name='Object Mode', space_type='EMPTY')
         kmi = km.keymap_items.new(
             OBJECT_OT_DuplicateHierarchyMulti.bl_idname,
             type='D', value='PRESS', ctrl=True, shift=True

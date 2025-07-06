@@ -23,11 +23,11 @@ import bmesh
 from mathutils import Vector
 
 bl_info = {
-    "name": "Mirror Duplicate (Edit Mode, Multi-Object) to Cursor",
+    "name": "🪄 SmartScene Toolkit - Mirror Duplicate (Edit Mode, Multi-Object) to Cursor",
     "author": "Tianle Yuan",
     "version": (1, 0, 0),
     "blender": (4, 4, 3),
-    "location": "🧩 SmartScene Toolkit",
+    "location": "Object Mode > Mirror Duplicate to Cursor (edit mode)",
     "category": "Object",
     "description": "Duplicate and mirror selected mesh elements across 3D cursor plane in Edit Mode (multi-object supported)"
 }
@@ -131,12 +131,25 @@ classes = (
     MESH_MT_mirror_dup_edit_cursor_menu,
 )
 
+addon_keymaps = []
+
 def register():
     for cls in classes:
         bpy.utils.register_class(cls)
     bpy.types.VIEW3D_MT_edit_mesh_context_menu.append(menu_func)
 
+    wm = bpy.context.window_manager
+    kc = wm.keyconfigs.addon
+    if kc:
+        km = kc.keymaps.new(name="Mesh", space_type='EMPTY')
+        kmi = km.keymap_items.new("mesh.mirror_duplicate_edit_cursor", type='M', value='PRESS', ctrl=True, shift=True)
+        addon_keymaps.append((km, kmi))
+
 def unregister():
+    for km, kmi in addon_keymaps:
+        km.keymap_items.remove(kmi)
+    addon_keymaps.clear()
+
     bpy.types.VIEW3D_MT_edit_mesh_context_menu.remove(menu_func)
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)

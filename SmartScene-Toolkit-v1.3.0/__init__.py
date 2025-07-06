@@ -19,12 +19,12 @@
 # ***** END GPL LICENSE BLOCK ****
 
 bl_info = {
-    "name": "🧩 SmartScene Toolkit",
+    "name": "🪄 SmartScene Toolkit",
     "author": "Tianle Yuan",
     "version": (1, 0, 0),
     "blender": (4, 4, 3),
     "location": "3D View > Object Context Menu / Edit Mode Menu",
-    "description": "Scene structure utilities: parenting, duplication, mirroring, collection management",
+    "description": "Scene structure utilities: parenting, selection , duplication, mirroring, and collection management",
     "category": "Object",
 }
 
@@ -37,6 +37,7 @@ from . import (
     hierarchy_duplicate,
     mirror_to_cursor,
     mirror_to_cursor_edit,
+    powerful_select
 )
 
 modules = [
@@ -45,6 +46,7 @@ modules = [
     hierarchy_duplicate,
     mirror_to_cursor,
     mirror_to_cursor_edit,
+    powerful_select
 ]
 
 def register():

@@ -21,11 +21,11 @@
 import bpy
 
 bl_info = {
-    "name": "Create ECP (Empty Coordinate Parent)",
+    "name": "🪄 SmartScene Toolkit - Create ECP (Empty Coordinate Parent)",
     "author": "Tianle Yuan",
     "version": (1, 0, 0),
     "blender": (4, 4, 3),
-    "location": "🧩 SmartScene Toolkit",
+    "location": "Object Mode > Parent to ECP",
     "category": "Object",
 }
 
@@ -92,11 +92,26 @@ class OBJECT_OT_create_ecp(bpy.types.Operator):
 def menu_func(self, context):
     self.layout.operator(OBJECT_OT_create_ecp.bl_idname, icon='OUTLINER_OB_EMPTY')
 
+addon_keymaps = []
+
 def register():
     bpy.utils.register_class(OBJECT_OT_create_ecp)
     bpy.types.VIEW3D_MT_object_context_menu.append(menu_func)
 
+    # Hotkey Registration:
+    # Ctrl + Shift + P to create ECP parent
+    wm = bpy.context.window_manager
+    kc = wm.keyconfigs.addon
+    if kc:
+        km = kc.keymaps.new(name='Object Mode', space_type='EMPTY')
+        kmi = km.keymap_items.new("object.create_ecp_parent", type='P', value='PRESS', ctrl=True, shift=True)
+        addon_keymaps.append((km, kmi))
+
 def unregister():
+    for km, kmi in addon_keymaps:
+        km.keymap_items.remove(kmi)
+    addon_keymaps.clear()
+
     bpy.types.VIEW3D_MT_object_context_menu.remove(menu_func)
     bpy.utils.unregister_class(OBJECT_OT_create_ecp)
 
