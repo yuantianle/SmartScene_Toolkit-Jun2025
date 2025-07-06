@@ -3,7 +3,7 @@ schema_version = "1.0.0"
 id = "SmartScene_Toolkit"
 version = "1.3.0"
 name = "SmartScene Toolkit"
-tagline = "Tool kits for easier parent, selection, duplication, mirror, and collection"
+tagline = "Toolkit for smarter parent, hierarchy, mirror operations"
 maintainer = "Tianle Yuan"
 
 type = "add-on"
